@@ -14,12 +14,11 @@ for(let i = 1; i <= 16; i++) {
     } 
 }
 
-function renderGrid() {
-    const userInput = parseInt(input.value);
-    const squareSize = 400 / userInput;
+function renderGrid(input) {
+    const squareSize = 400 / input;
     container.innerHTML = '';
-    for(let i = 1; i <= userInput; i++) {
-        for(let j = 1; j <= userInput; j++) {
+    for(let i = 1; i <= input; i++) {
+        for(let j = 1; j <= input; j++) {
             const divs = document.createElement('div');
             divs.setAttribute('style', 
                 `flex: 0 0 ${squareSize}px; 
@@ -33,7 +32,10 @@ function renderGrid() {
     }
 }
 
-inputBtn.addEventListener('click', renderGrid);
+inputBtn.addEventListener('click',() => {
+    const userInput = parseInt(input.value);
+    renderGrid(userInput);
+});
 
 
 
