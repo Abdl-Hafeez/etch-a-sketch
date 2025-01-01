@@ -1,5 +1,6 @@
 const input = document.querySelector('#num_of_squares');
 const inputBtn = document.querySelector('#input-btn');
+const resetBtn = document.querySelector('#reset');
 const container = document.querySelector('.container');
 
 function renderGrid(input) {
@@ -30,5 +31,8 @@ inputBtn.addEventListener('click',() => {
     renderGrid(userInput);
 });
 
+resetBtn.addEventListener('click', () => {
+    renderGrid(16);
+})
 
 
