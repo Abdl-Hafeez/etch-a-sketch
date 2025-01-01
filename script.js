@@ -32,6 +32,7 @@ inputBtn.addEventListener('click',() => {
 });
 
 resetBtn.addEventListener('click', () => {
+    input.value = '';
     renderGrid(16);
 })
 
