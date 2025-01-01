@@ -4,6 +4,20 @@
     padding: 0;
     
 }
+
+.input {
+    width: 410px;
+    margin: 20px auto;
+}
+
+#num_of_squares {
+    width: 150px;
+}
+
+#num_of_squares, .input button {
+    padding: 2px 5px;
+}
+
 .container {
     width: 400px;
     height: 400px;
